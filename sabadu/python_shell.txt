@@ -1,0 +1,68 @@
+ython
+Python 2.7.11 (default, Jan 22 2016, 08:29:18)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ano = "aprende python"
+>>> print ano
+aprende python
+>>> ony = "install hela couchdb"
+>>> print ony
+install hela couchdb
+>>> len(ony)
+20
+>>> len(ano)
+14
+>>> if len(ony) > len(ano) :
+...     print "This string is the longest: (ony)"
+... else:
+...     print "This string is the longest: (ano)"
+...
+This string is the longest: (ony)
+>>> if len(ony) > len(ano) :
+...     print ony
+... else:
+...     print ano
+...
+install hela couchdb
+>>> my_list = ['ano', 'mario', 'nando', 'niko']
+>>> my_list
+['ano', 'mario', 'nando', 'niko']
+>>> len(my_list)
+4
+>>> my_dict = {}
+>>> "hello" in my_dict
+False
+>>> my_dict["hello"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  KeyError: 'hello'
+  >>> my_dict["hello"] = "world"
+  >>> "hello" in my_dict
+  True
+  >>> print my_dict
+  {'hello': 'world'}
+  >>> my_dict "Ano" = 20
+    File "<stdin>", line 1
+        my_dict "Ano" = 20
+                        ^
+                        SyntaxError: invalid syntax
+                        >>> my_dict ["Ano"] = 20
+                        >>> print my_dict
+                        {'Ano': 20, 'hello': 'world'}
+                        >>> "Ano" in my_dict
+                        True
+                        >>> my_dict['Ano']
+                        20
+                        >>> my_dict['Anoddddd']
+                        Traceback (most recent call last):
+                          File "<stdin>", line 1, in <module>
+                          KeyError: 'Anoddddd'
+                          >>> my_dict.get('Anoddddd')
+                          >>> my_dict['Anoddddd']
+                          Traceback (most recent call last):
+                            File "<stdin>", line 1, in <module>
+                            KeyError: 'Anoddddd'
+                            >>> type(45.0)
+                            <type 'float'>
+                            >>> 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1
+                            255

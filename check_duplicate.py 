@@ -1,0 +1,71 @@
+def has_duplicates(values):
+    for i in range(0, len(values)):
+        for x in range(i + 1, len(values)):
+            if values[i] == values[x]:
+                return True
+    return False
+
+
+# Test the has_duplicates method.
+print(has_duplicates([10, 20, 30, 40]))
+print(has_duplicates([10, 20, 10, 40]))
+
+lst = [1,2,3,4,1]
+d = {}
+for x in lst:
+    d[x] = x in d
+print d[1] # True
+print d[2] # False
+print [x for x in d if d[x]] # [1]
+
+
+
+
+
+def max_num_in_list( list ):
+    max = list[ 0 ]
+    for a in list:
+        if a > max:
+            max = a
+    return max
+print(max_num_in_list([1, 2, -8, 0]))
+
+return len( lst ) == len( set( lst ) )
+
+def multiply_list(items):
+    tot = 1
+    for x in items:
+        tot *= x
+    return tot
+
+
+    index = 0
+    for value in a_list:
+        a_list[index] = 2 * value
+        index += 1
+
+
+        students = [
+            ("John", ["CompSci", "Physics"]),
+            ("Vusi", ["Maths", "CompSci", "Stats"]),
+            ("Jess", ["CompSci", "Accounting", "Economics", "Management"]),
+            ("Sarah", ["InfSys", "Accounting", "Economics", "CommLaw"]),
+            ("Zuki", ["Sociology", "Economics", "Law", "Stats", "Music"])]
+
+        # Print all students with a count of their courses.
+        for (name, subjects) in students:
+            print(name, "takes", len(subjects), "courses")
+
+        # Count how many students are taking CompSci
+        counter = 0
+        for (name, subjects) in students:
+            for s in subjects:                 # A nested loop!
+                if s == "CompSci":
+                   counter += 1
+
+        print("The number of students taking CompSci is", counter)
+
+
+=====================================================================================
+        FIREFOX
+        COUNT objects INSIDE A LIST?

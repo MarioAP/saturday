@@ -1,0 +1,27 @@
+# Types and casting1 is an Integer
+1.0 is a Float
+'1' is a String1 + 1 == 2
+1 + 1.0 == 2.0
+1 + '1' == 2 # Error!!!
+1 + int('1') == 2  # _cast_ numbered strings as integers
+1 + float('1') == 2.0  # _cast_ numbered strings as floats
+
+
+
+
+
+
+# How to use Python's templating with `.format()`# Pass a string and have it inserted at {}
+"Hello {}".format("Nando")
+'Hello Nando'# Pass multiple strings like a list
+>> "Hello {0}, how is {0}".format("Nando", "World")
+'Hello Nando, how is Nando'
+>> "Hello {1}, how is {0}".format("Nando", "World")
+'Hello World, how is Nando'
+>> "Hello {1}, how is {1}".format("Nando", "World")
+'Hello World, how is World'
+>> "Hello {0}, how is {1}".format("Nando", "World")
+'Hello Nando, how is World'# Pass a dictionary as **kwargs. Use the key and see the value
+>> my_dict = {'name':'Nando', 'place': 'World'}
+>> "Hello {name}, how is {place}".format(**my_dict)
+'Hello Nando, how is World'
